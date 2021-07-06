@@ -1,6 +1,9 @@
 # All materials and notebooks for my capstone project on Box Office Revenue can be found here. 
 
+Objective: To apply multiple regression models to data acquired from TMDB and IMDB in order to predict movie revenue and conduct regression analysis using Python/Pandas/Sci-Kit Learn
 
-Business problem: Can I accurately predict the revenue of a given movie using models built using widely available data (downloaded from TMDB via Kaggle and corrected with data from IDMB's API)? 
+Results: Used a tiered modeling approach using a gradient boosting model to predict film revenue and leveraged feature importance to visualize actionable insights on which variables impact revenue using Seaborn.  Identified and corrected over 600 incorrect revenue values in TMDB  data and corrected using the open-source IMDbPy API.
 
-All notebooks are directly related to and build up to my final modeling and report, with the exception of my IMDbPy Notebook, which I used to learn and orient myself to the IMDB Python package for extracting data from their API. 
+Notebooks are labeled with their 'version' number.  Initial attempt will be noted by "X.0" while the second attempt after identifying a mathmatical error that required a different approach are noted by "X.2".  
+
+Future work including the use of clustering algorithms and improved feature engineering will be noted by "X.3" and is slated to begin in August of 2021.
