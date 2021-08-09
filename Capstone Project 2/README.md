@@ -1,4 +1,4 @@
-## Modelling gross film revenue with regression models. 
+## Modelling Film Revenue 
 
 - **Objective:** To apply multiple regression models to data acquired from TMDB and IMDB in order to predict movie revenue and conduct regression analysis using Python/Pandas/Sci-Kit Learn
 
