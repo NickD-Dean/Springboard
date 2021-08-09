@@ -18,19 +18,19 @@
 File Organization:
 
 - Code
-  - 01\ -\ Data\ Wrangling\ -\ Box\ Office\ Revenue.ipynb
-  - 01.5\ -\ Learning\ to\ use\ IMDbPy\ &\ IMDB\ API.ipynb
-  - 02\ -\ Exploratory\ Data\ Analysis\ -\ Box\ Office\ Revenue.ipynb
-  - 03\ -\ Preprocessing\ and\ Training\ -\ Predicting\ Box\ Office\ Revenue.ipynb
-  - 04\ -\ Preprocessing_optimizing_for_ouliers.ipynb
-  - 04.2\ -\ Preprocessing_optimizing_for_ouliers\ -\ V2,\ log\ transform\ problem.ipynb
-  - 05\ -\ Modeling\ &\ Reducing\ Dimensionality.ipynb
-  - 05.2\ -\ Modeling\ &\ Reducing\ Dimensionality-V2.0-log\ transform\ problem.ipynb
-  - 06\ -\ Modeling_revenue_tiers.ipynb
-  - 06.2\ -\ Modeling_revenue_tiers-log\ transform\ problem.ipynb
-  - 07\ -\ Modeling\ revenue\ on\ a\ film\ tier.ipynb
+  - 01 - Data Wrangling - Box Office Revenue
+  - 01.5 - Learning to use IMDbPy & IMDB API
+  - 02 - Exploratory Data Analysis - Box Office Revenue
+  - 03 - Preprocessing and Training - Predicting Box Office Revenue
+  - 04 - Preprocessing_optimizing_for_ouliers
+  - 04.2 - Preprocessing_optimizing_for_ouliers - V2
+  - 05 - Modeling & Reducing Dimensionality
+  - 05.2 - Modeling & Reducing Dimensionality-V2.0
+  - 06 - Modeling_revenue_tiers
+  - 06.2 - Modeling_revenue_tiers
+  - 07 - Modeling revenue on a film tier
   - README.md
-  - Scratch\ notebook\ for\ capstone\ visualizations\ &\ statistics.ipynb
+  - Scratch notebook for capstone visualizations & statistics
 - Data
   - BoxOfficeData.csv
   - No_Outliers.csv
