@@ -1,4 +1,4 @@
-# All materials and notebooks for my capstone project for Modeling Film Revenue can be found here. 
+## Modelling gross film revenue with regression models. 
 
 - **Objective:** To apply multiple regression models to data acquired from TMDB and IMDB in order to predict movie revenue and conduct regression analysis using Python/Pandas/Sci-Kit Learn
 
