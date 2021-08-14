@@ -1,4 +1,4 @@
-# Repository for Data Science capstone projects, case studies, and take-home tests
+
 
 ### This repository holds all work related to the Springboard Data Science Career Track and subsequent job search.
 
