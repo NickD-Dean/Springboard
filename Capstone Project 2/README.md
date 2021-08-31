@@ -79,9 +79,7 @@ File Organization:
 
     - Some of the most important features of a film which impact revenue a product studio *does* have influence over: 
     
-    ![image of feature importance]
-    (https://github.com/NickD-Dean/Springboard/blob/806ff5726965f16342133bdde0f624d8eb94a9b3/Capstone%20Project%202/Documents/Feature%20Importance.png)
-    
+    ![image of feature importance](Capstone Project 2/Documents/Feature Importance.png)    
     - It is interesting to note that while the contributions of a top tier production company are the single biggest important feature in three out of four seasons;
       when it comes to films released during the holidays (here designated as November and December) budget is the most important factor.
     - Additionally, the film's plot overview and tagline length are features which are intended to be standins for marketing data.  These two features are
