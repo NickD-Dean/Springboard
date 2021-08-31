@@ -78,11 +78,13 @@ File Organization:
 
     - Some of the most important features of a film which impact revenue a product studio *does* have influence over: 
     
-   ![image of feature importance](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%202/Documents/Feature%importance.png)
+![image of feature importance](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%202/Documents/Feature%importance.png)
     
     - It is interesting to note that while the contributions of a top tier production company are the single biggest important feature in three out of four seasons;
       when it comes to films released during the holidays (here designated as November and December) budget is the most important factor.
+      
     - Additionally, the film's plot overview and tagline length are features which are intended to be standins for marketing data.  These two features are
       consistently in the top ten most important features in addition to other post-production qualities like runtime. 
+      
     - Based on the above, I was able to model revenue based on production company and genre to within 30% accuracy, and provide insights as to what features in a 
       film can be altered to maximize worldwide revenue.
