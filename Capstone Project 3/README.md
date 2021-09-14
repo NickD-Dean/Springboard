@@ -57,7 +57,7 @@ view for clustering, I did this by aggregating data using SQL queries and append
 
 - Agglomerative modeling provided good structure to the data, with the most defined clusters occuring with three clusters: 
 
-![image of agglomerative dendogram](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Dendrogram.png)
+     ![image of agglomerative dendogram](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Dendrogram.png)
 
 
 ### Model Selection: 
