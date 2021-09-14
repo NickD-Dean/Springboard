@@ -8,36 +8,36 @@
 File Organization: 
 
 - Code
-  ─ 01 - Creating Household-centered data views
-  ─ 02 - Creating Aggregate dataframe of Household data for segmentation
-  ─ 03 - Customer Segmentation Data Wrangling
-  ─ 04 - Exploratory Data Analysis
-  ─ 05 - Customer Segmentation Pre-processing and Training
-  ─ 06 - Cluster Modeling
-  ─ Churn Prediction & Analysis
-  ─ README.md
+  - 01 - Creating Household-centered data views
+  - 02 - Creating Aggregate dataframe of Household data for segmentation
+  - 03 - Customer Segmentation Data Wrangling
+  - 04 - Exploratory Data Analysis
+  - 05 - Customer Segmentation Pre-processing and Training
+  - 06 - Cluster Modeling
+  - Churn Prediction & Analysis
+  - README.md
 
-─ Data
-  ─ Aggregate_Customer_Data
-  ─ Cleaned_Customer_Data
-  ─ Correlation_Thresholds
-  ─ Cust_seg
-  ─ Cust_seg_categorical
-  ─ Cust_seg_numerical
-  ─ Trimmed_Data
+- Data
+  - Aggregate_Customer_Data
+  - Cleaned_Customer_Data
+  - Correlation_Thresholds
+  - Cust_seg
+  - Cust_seg_categorical
+  - Cust_seg_numerical
+  - Trimmed_Data
   - campaign_desc.csv
   - campaign_table.csv
-  ─ causal_data.csv
-  ─ coupon.csv
-  ─ coupon_redempt.csv
-  ─ dunnhumby - The Complete Journey User Guide.pdf
-  ─ hh_demographic.csv
-  ─ product.csv
-  ─ transaction_data.csv
-  ─ README.md
-─ Documents
-  ─ README.md
-─ README.md
+  - causal_data.csv
+  - coupon.csv
+  - coupon_redempt.csv
+  - dunnhumby - The Complete Journey User Guide.pdf
+  - hh_demographic.csv
+  - product.csv
+  - transaction_data.csv
+  - README.md
+-  Documents
+  - README.md
+- README.md
 
 ## Clustering Approach:
 
