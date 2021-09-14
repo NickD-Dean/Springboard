@@ -45,7 +45,7 @@ File Organization:
 view for clustering, I did this by aggregating data using SQL queries and appending to the data set. 
 
 - After creating the data view I realized that about 30% of households had any demographic information, and decided the limit clustering to those households for which I had demographic information
-- 
+ 
 - Prior to applying clustering algorithms to the data, I decided to compare at least two different models and use whichever model provided the most distinct clusters for customer segmentation
 
 
@@ -62,8 +62,25 @@ view for clustering, I did this by aggregating data using SQL queries and append
 
 ### Model Selection: 
 
+- More important than the structure to the data uncovered by the clustering models was their usefulness for segmenting customers, which necessitates both a need for distinct demographic traits as well as behavioral differences; the Agglomerative model provided this better than the K-means model did.
 
+- Both models uncovered the same key differences along demographic lines, overwhelmingly hosuehold size, marital status, and childrearing status were the most important differences between clusters regardless of algorithm used or the number of clusters used: 
 
+     ![image of household size with clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Household%20Size.png)
+     
+- However, the Agglomerative model revealed the subtle differences in spending and transaction behavior between the clusters in a way that the K-means model did not.  You can see below that the average loyalty discount, as well as maximum manufacturer rebate (coupons that the product manufacturer pays for rather than the grocery store) are distinct for the Agglomerative model, while these were nearly identical for the K-means model. 
+
+    ![image of the avg loyalty disc](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Avg%20Loyalty%20Discount.png)
+    
+    ![image of the max manufacturer rebate](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Max%20Manu%20Rebate.png)
+
+- You can see this 'distinctness' difference between the clusters created by either algorithm when visualized under PCA in 3-dimensions:
+
+    ![image of K-means clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/K-means%20clusters.png)
+    
+    ![image of Agglo clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Agglomerative%20Clusters.png)
+    
+    
 ### Customer Segmentation Results
 
 ## Churn Modeling Approach:
