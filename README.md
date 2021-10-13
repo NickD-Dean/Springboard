@@ -15,7 +15,7 @@ File Organization can be found here:
     - Documents
     - Guided Capstone Slide Deck.pdf
 - README.md
-- Capstone Project 2  (Regression model for film worldwide revenue)
+- Film_revenue_regression_analysis
     - Code
     - Data
     - Documents
