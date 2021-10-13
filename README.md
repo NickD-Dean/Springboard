@@ -9,7 +9,7 @@
 
 File Organization can be found here:
 
-- Capstone Project 1  (Regression analysis for ski resorts)
+- Ski_resort_pricing_and_Regression_analysis
     - Code
     - Data
     - Documents
