@@ -20,7 +20,7 @@ File Organization can be found here:
     - Data
     - Documents
 - README.md
-- Capstone Project 3 (Customer Segmentation via clustering models & churn prediction classification)
+- CustomerSegmentation_and_Churn_Analysis
     - Code
     - Data
     - Documents
