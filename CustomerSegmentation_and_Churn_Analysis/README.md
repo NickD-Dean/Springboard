@@ -57,7 +57,7 @@ view for clustering, I did this by aggregating data using SQL queries and append
 
 - Agglomerative modeling provided good structure to the data, with the most defined clusters occuring with three clusters: 
 
-     ![image of agglomerative dendogram](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Dendrogram.png)
+     ![image of agglomerative dendogram](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Dendrogram.png)
 
 
 ### Model Selection: 
@@ -66,24 +66,52 @@ view for clustering, I did this by aggregating data using SQL queries and append
 
 - Both models uncovered the same key differences along demographic lines, overwhelmingly hosuehold size, marital status, and childrearing status were the most important differences between clusters regardless of algorithm used or the number of clusters used: 
 
-     ![image of household size with clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Household%20Size.png)
+     ![image of household size with clusters](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Household%20Size.png)
      
 - However, the Agglomerative model revealed the subtle differences in spending and transaction behavior between the clusters in a way that the K-means model did not.  You can see below that the average loyalty discount, as well as maximum manufacturer rebate (coupons that the product manufacturer pays for rather than the grocery store) are distinct for the Agglomerative model, while these were nearly identical for the K-means model. 
 
-    ![image of the avg loyalty disc](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Avg%20Loyalty%20Discount.png)
+    ![image of the avg loyalty disc](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Avg%20Loyalty%20Discount.png)
     
-    ![image of the max manufacturer rebate](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Max%20Manu%20Rebate.png)
+    ![image of the max manufacturer rebate](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Max%20Manu%20Rebate.png)
 
 - You can see this 'distinctness' difference between the clusters created by either algorithm when visualized under PCA in 3-dimensions:
 
-    ![image of K-means clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/K-means%20clusters.png)
+    ![image of K-means clusters](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/K-means%20clusters.png)
     
-    ![image of Agglo clusters](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%203/Documents/Agglomerative%20Clusters.png)
+    ![image of Agglo clusters](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Agglomerative%20Clusters.png)
     
     
 ### Customer Segmentation Results
 
+- I ultimately chose to work with the agglomerative lusters sinc ethey provided the best structure to the data.  The resulting customer segments were as follows:
+
+1. **A0:** (Red cluster in above plot) This is the largest cluster that the Agglomerative model produced. It's overwhelmingly made up of  single-person households which are poorer on average than those belonging to another cluster. This cluster also has the largest group of households between the ages of 45 and 54 years old, almost half of the households in this cluster belong to that group.  This cluster is the most recent purchasers, who typically have the smallest average sales value, smallest discounts, and the smallest basket size. "Frequent low volume customers"
+
+
+2. **A1:** (Grey cluster in above plot)This is the smallest cluster, and also is the youngest cluster with most of its households made up of people between the age of 25 and 44. This cluster is also the only cluster to be made up of households with children, and not a single member has fewer than 3 members. Finally, this is the wealthiest cluster on average.  A1 has the largest average discount (coupon, loyalty, or rebate), as well as the most coupons redeemed and the highest average sales value as well as highest total value. "High value, high discount"
+
+
+3. **A2:** (Orange cluster in above plot)The final cluster is exclusively made up of 2-person households with no children. Generally speaking this cluster is older on average than the other two, with the largest number of households over the age of 65. Additionally, this cluster is generally poorer on average than cluster A1, however it has the largest number of households earning over 150k.  This cluster is the one which has shopped the least recently, but has the second highest loyalty discount. Generally speaking it seems to follow the behavior trends of A0, but with less magnitude (frequent but low value discounts). "High interval shoppers"
+
+
 ## Churn Modeling Approach:
+
+Prior to analyzing churn using machine learning I needed to settle on a definition of churn.  I decided to visualize how much of the customer base would be labelled as 'churned' under different definitions.  These are listed and visualized below: 
+
+1. Churn is allowing 30 days (1 month) to pass without visiting one of the grocery stores (This infers that a customer has shopped 2 times at a different grocery chain without returning to the chain being examined).
+
+
+2. Churn is no longer shopping from this brand of grocery chain 1 year after the first active day (This limits churn to those who are never 'resurrected').
+
+
+3. Churn is allowing 90 days to pass without visiting one of the grocery stores (This infers that a customer shopped 6 times at a different chain, and would capture the behavior which I personally exhibit).
+
+
+4. Some other definition of churn based on patterns noticed in the data.
+
+![image of churn definition](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Churn%20Def%20Plot.png)
+
+I ultimately chose to work with definition # 3 for churn.  This resulted in 6.84% of households being labeled as churn. 
 
 ### Models Used:
 
