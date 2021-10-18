@@ -72,11 +72,11 @@ File Organization:
     
 - Notably, predicting revenue is significantly easier depending on which season of the year a film is released in: 
     
-![image of seasonal accuracy](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%202/Documents/Seasonal%20error.png)
+![image of seasonal accuracy](https://github.com/NickD-Dean/Springboard/blob/c9c6e35ebb8c1e80284073d6184f352bf71d6f77/Film_revenue_regression_analysis/Documents/Seasonal%20error.png)
 
 - Some of the most important features of a film which impact revenue a product studio *does* have influence over: 
     
-![image of feature importance](https://raw.githubusercontent.com/NickD-Dean/Springboard/main/Capstone%20Project%202/Documents/Feature%20Importance.png)
+![image of feature importance](https://github.com/NickD-Dean/Springboard/blob/c9c6e35ebb8c1e80284073d6184f352bf71d6f77/Film_revenue_regression_analysis/Documents/Feature%20Importance.png)
     
 - It is interesting to note that while the contributions of a top tier production company are the single biggest important feature in three out of four seasons; when it comes to films released during the holidays (here designated as November and December) budget is the most important factor.
       
