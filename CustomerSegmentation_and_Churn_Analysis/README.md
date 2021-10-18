@@ -133,6 +133,27 @@ I ultimately chose to work with definition # 3 for churn.  This resulted in 6.84
 
 - Below I've plotted the feature importances and shap summary plot for the Gradient Boosting model. 
 
-![Feature Importance]()
+![Feature Importance](https://github.com/NickD-Dean/Springboard/blob/95b6215a711ed17b97613a955d903d09690d4a6d/CustomerSegmentation_and_Churn_Analysis/Documents/Feature_importance.png)
 
-![Shap Summary]()
+![Shap Summary](https://github.com/NickD-Dean/Springboard/blob/95b6215a711ed17b97613a955d903d09690d4a6d/CustomerSegmentation_and_Churn_Analysis/Documents/Shap_summary.png)
+
+
+Using the above plots, as well as the previous exploratory analysis I made several recommendations: 
+
+
+1. Firstly, provide more and larger coupons in the mailing advertisements.  Higher maximum coupon discounts are associated with reduced churn probability, as well as a higher frequency of purchasing products that were advertised in the mailer.
+
+
+2. Secondly, increase the size of ‘utility’ items sold in the store in order to increase the average shopping lag (one of the best predictors of churn) of customers.  For instance, selling a 24 ct pack of paper towels rather than a 16 ct pack.  These kinds of utility items can influence households to shop with a larger period of time in between trips and are products that are simply convenient to purchase anywhere.  If a customer needs toilet paper they’re going to purchase it regardless of the amount you sell. 
+
+
+3. Find ways to increase loyalty program participation, since an increased loyalty discount is heavily correlated (correlation coefficient of 0.82) with increased average sales value for a household.  Strategies used by other grocery chains for this purpose include pricing techniques such as 'instant markdown' or visually contrasting normal vs loyalty prices.
+
+
+4. No household redeemed more than 4 percent of their coupons unless Type A campaigns were less than 50% of the campaigns sent to them.  Type A campaigns are tailored based upon past purchasing behavior, and based on the churn analysis a higher number of unique products is associated with an increased ‘stickiness’ for a household.  I recommend using Type A campaigns to offer coupons for new products based on past purchases, or to reduce the number of Type A campaigns overall.
+
+
+5. Lastly, study further the customers who purchased a high percentage of products on display. Were the products they purchased on display cheaper than other similar products they have purchased? Why is it that purchasing goods marketed in one way causes the model to predict a customer as churned, while purchasing goods marketed via mail as retained?  Understanding how marketing efforts influence different households in different ways - particularly in the context of customer segmentation - will better enable targeted efforts to reduce churn. 
+
+
+
