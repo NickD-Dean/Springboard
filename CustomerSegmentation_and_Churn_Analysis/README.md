@@ -111,10 +111,28 @@ Prior to analyzing churn using machine learning I needed to settle on a definiti
 
 ![image of churn definition](https://github.com/NickD-Dean/Springboard/blob/0bf0e49098a1d924d9db1759ed1db2def231f1aa/CustomerSegmentation_and_Churn_Analysis/Documents/Churn%20Def%20Plot.png)
 
+
 I ultimately chose to work with definition # 3 for churn.  This resulted in 6.84% of households being labeled as churn. 
 
-### Models Used:
 
-### Model Selection: 
+### Models Selection:
+
+
+- I was primarily focused on the recall score for the churn class.  This measures the ratio of correct churn predictions to the total number of churned customers in the data set.   Since the goal is to use machine learning to understand which qualities of a household are the most indicative of churn, this will be the best metric for evaluating models.
+
+
+- I chose which models to test using the sci-kit learn website’s best practices diagram. Ultimately the models I tested  were: Linear SVC, KNN, SVC, Random Forest, and Gradient Boosting.
+
+
+- Only the Random Forest, KNN, and Gradient Boosting predicted any households as churned.  Of those only the Gradient Boosting model had a minority class recall score over 0.3.
+
+
+- My Gradient Boosting model correctly predicted 44% of the true churned households, far better than any other model, and also produced the highest overall accuracy of 95%.  I used this model with it's feature_importances as well as the shapley values to better understand the model and the insights it provided.
 
 ### Churn Results: 
+
+- Below I've plotted the feature importances and shap summary plot for the Gradient Boosting model. 
+
+![Feature Importance]()
+
+![Shap Summary]()
